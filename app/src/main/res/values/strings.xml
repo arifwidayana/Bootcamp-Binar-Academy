@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Binar Academy</string>
+    <string name="desc_motivation">Cracking the human brain to make learning as fun as watching Netflix, as addictive as browsing your Instagram feed</string>
+    <string name="btn_message">Message</string>
+    <string name="desc_highlights">Arif started at Binar Academy 1 years before you did</string>
+    <string name="title_highlights">The Future of Education: How EdTech Maximizes Human Potential</string>
+    <string name="content_desc">Just Image</string>
+    <string name="desc_highlights_one">Arif started at Binar Academy 1 years before you did</string>
+    <string name="title_highlights_one">You both work at Binar Academy</string>
+    <string name="big_title_highlights">Highlights</string>
+    <string name="view_jobs_hiring">View both jobs</string>
+    <string name="desc_hiring">Binar Academy ∙ Jakarta Metropolitan Area ∙ 300 days ago</string>
+    <string name="title_hiring"><![CDATA[Hiring a Business Analyst & 1 other]]></string>
+    <string name="connect_friendship">307 mutual connections: Dr.Pratama Persadha, Normal Sasono, and 305 others</string>
+    <string name="total_connect">500+ connections</string>
+    <string name="spacing">∙</string>
+    <string name="followers"><b>24,342</b> followers</string>
+    <string name="location_person">Jakarta, Jakarta, Indonesia</string>
+    <string name="instance">Binar Academy</string>
+    <string name="mention_person">Talks about #techforgood and #socialentrepreneurship</string>
+    <string name="number_person">1st</string>
+    <string name="name_person">Arif Widayana</string>
+    <string name="hint_search_people">Search people</string>
+    <string-array name="list_spinner">
+        <item>Hitam</item>
+        <item>Putih</item>
+        <item>Biru</item>
+    </string-array>
+</resources>
