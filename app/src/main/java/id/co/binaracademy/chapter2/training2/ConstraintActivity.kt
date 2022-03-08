@@ -1,4 +1,4 @@
-package id.co.binaracademy.chapter2
+package id.co.binaracademy.chapter2.training2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
