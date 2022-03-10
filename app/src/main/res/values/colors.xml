@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    #Default Color
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -13,4 +14,36 @@
     <color name="blue">#0053a0</color>
     <color name="white_blue">#0080ff</color>
     <color name="blue_calm">#0b93df</color>
+
+    #Green Color
+    <color name="Green_80">#0F752E</color>
+    <color name="Green_60">#1C9440</color>
+    <color name="Green_50">#31B057</color>
+    <color name="Green_40">#51C273</color>
+
+    #Blue Color
+    <color name="Blue_80">#114D96</color>
+    <color name="Blue_70">#0081A0</color>
+    <color name="Blue_60">#216BC4</color>
+    <color name="Blue_50">#388BF2</color>
+    <color name="Blue_40">#5BA0F5</color>
+    <color name="Blue_20">#DBEBFF</color>
+
+    #Black Color
+    <color name="Black_100">#25282B</color>
+    <color name="Black_80">#52575C</color>
+    <color name="Black_60">#A0A4A8</color>
+    <color name="Black_40">#CACCCF</color>
+    <color name="Black_10">#E8E8E8</color>
+
+    #Red Color
+    <color name="Red_60">#CF212A</color>
+    <color name="Red_50">#E52A34</color>
+
+    #Yellow Color
+    <color name="Yellow_50">#FBAF18</color>
+
+    #Orange Color
+    <color name="Orange_50">#FC8338</color>
+
 </resources>
