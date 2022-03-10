@@ -34,18 +34,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:paddingVertical="8dp"
-                    android:paddingHorizontal="16dp"
                     android:layout_margin="16dp"
+                    android:autofillHints="name"
                     android:background="@drawable/bg_white_corner_50"
                     android:drawableStart="@drawable/ic_search"
-                    android:hint="\tCari layanan, makanan, &amp; tujuan"/>
+                    android:hint="@string/hint_search"
+                    android:inputType="textAutoCorrect"
+                    android:minHeight="32dp"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:textColorHint="#757575"
+                    tools:ignore="TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp" />
 
                 <ImageButton
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@drawable/bg_white_corner_50"
-                    android:src="@drawable/ic_person" />
+                    android:contentDescription="@string/content_img"
+                    android:src="@drawable/ic_person"
+                    tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
+                    tools:layout_editor_absoluteX="350dp"
+                    tools:layout_editor_absoluteY="16dp" />
             </androidx.appcompat.widget.Toolbar>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -106,7 +117,8 @@
                     app:layout_constraintBottom_toBottomOf="@id/cl_payment"
                     app:layout_constraintStart_toEndOf="@id/v_one_dot"
                     app:layout_constraintTop_toTopOf="@id/cl_payment"
-                    android:layout_marginStart="8dp">
+                    android:layout_marginStart="8dp"
+                    tools:ignore="NestedScrolling">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="128dp"
@@ -132,16 +144,18 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="10dp"
                                     android:layout_marginTop="4dp"
+                                    android:contentDescription="@string/content_img"
                                     android:src="@drawable/ic_wallet"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent" />
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="ImageContrastCheck" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginEnd="10dp"
                                     android:fontFamily="sans-serif-black"
-                                    android:text=" gopay"
+                                    android:text="@string/gopay"
                                     android:textColor="@color/black"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@id/iv_balance"
@@ -152,7 +166,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="10dp"
-                                    android:text="Rp109.048"
+                                    android:text="@string/rp109_048"
                                     android:textColor="@color/black"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -162,11 +176,12 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="10dp"
-                                    android:text="Klik &amp; cek riwayat"
+                                    android:text="@string/klik_amp_cek_riwayat"
                                     android:textColor="@color/green"
                                     android:textSize="10sp"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@id/tv_balance"/>
+                                    app:layout_constraintTop_toBottomOf="@id/tv_balance"
+                                    tools:ignore="SmallSp" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </androidx.cardview.widget.CardView>
 
@@ -189,16 +204,18 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="10dp"
                                     android:layout_marginTop="4dp"
+                                    android:contentDescription="@string/content_img"
                                     android:src="@drawable/ic_wallet"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent" />
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="ImageContrastCheck" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginEnd="10dp"
                                     android:fontFamily="sans-serif-black"
-                                    android:text=" gopay"
+                                    android:text="@string/gopay"
                                     android:textColor="@color/black"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toEndOf="@id/iv_balance_later"
@@ -209,7 +226,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="10dp"
-                                    android:text="Rp109.048"
+                                    android:text="@string/rp109_048"
                                     android:textColor="@color/black"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -219,11 +236,12 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="10dp"
-                                    android:text="Klik &amp; cek riwayat"
+                                    android:text="@string/klik_amp_cek_riwayat"
                                     android:textColor="@color/green"
                                     android:textSize="10sp"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@id/tv_balance_later"/>
+                                    app:layout_constraintTop_toBottomOf="@id/tv_balance_later"
+                                    tools:ignore="SmallSp" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </androidx.cardview.widget.CardView>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -233,13 +251,15 @@
                     android:id="@+id/iv_pay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toTopOf="@id/tv_pay"
-                    app:layout_constraintStart_toEndOf="@id/sv_balance"
-                    app:layout_constraintTop_toTopOf="@id/cl_payment"
-                    app:layout_constraintEnd_toStartOf="@id/iv_top_up"
                     android:layout_marginTop="16dp"
                     android:background="@drawable/bg_white_corner_10"
-                    android:src="@drawable/ic_arrow_upward"/>
+                    android:contentDescription="@string/content_img"
+                    android:src="@drawable/ic_arrow_upward"
+                    app:layout_constraintBottom_toTopOf="@id/tv_pay"
+                    app:layout_constraintEnd_toStartOf="@id/iv_top_up"
+                    app:layout_constraintStart_toEndOf="@id/sv_balance"
+                    app:layout_constraintTop_toTopOf="@id/cl_payment"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/tv_pay"
@@ -248,7 +268,7 @@
                     app:layout_constraintEnd_toEndOf="@id/iv_pay"
                     app:layout_constraintStart_toStartOf="@id/iv_pay"
                     app:layout_constraintTop_toBottomOf="@id/iv_pay"
-                    android:text="Bayar"
+                    android:text="@string/bayar"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -256,13 +276,15 @@
                     android:id="@+id/iv_top_up"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toTopOf="@id/tv_top_up"
-                    app:layout_constraintStart_toEndOf="@id/iv_pay"
-                    app:layout_constraintTop_toTopOf="@id/cl_payment"
-                    app:layout_constraintEnd_toStartOf="@id/iv_explore"
                     android:layout_marginTop="16dp"
                     android:background="@drawable/bg_white_corner_10"
-                    android:src="@drawable/ic_add"/>
+                    android:contentDescription="@string/content_img"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toTopOf="@id/tv_top_up"
+                    app:layout_constraintEnd_toStartOf="@id/iv_explore"
+                    app:layout_constraintStart_toEndOf="@id/iv_pay"
+                    app:layout_constraintTop_toTopOf="@id/cl_payment"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/tv_top_up"
@@ -271,7 +293,7 @@
                     app:layout_constraintEnd_toEndOf="@id/iv_top_up"
                     app:layout_constraintStart_toStartOf="@id/iv_top_up"
                     app:layout_constraintTop_toBottomOf="@id/iv_top_up"
-                    android:text="Isi Saldo"
+                    android:text="@string/isi_saldo"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
 
@@ -279,13 +301,15 @@
                     android:id="@+id/iv_explore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_white_corner_10"
+                    android:contentDescription="@string/content_img"
+                    android:src="@drawable/ic_explore"
                     app:layout_constraintBottom_toTopOf="@id/tv_explore"
                     app:layout_constraintEnd_toEndOf="@id/cl_payment"
                     app:layout_constraintStart_toEndOf="@id/tv_top_up"
                     app:layout_constraintTop_toTopOf="@id/cl_payment"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/bg_white_corner_10"
-                    android:src="@drawable/ic_explore"/>
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/tv_explore"
@@ -294,7 +318,7 @@
                     app:layout_constraintEnd_toEndOf="@id/iv_explore"
                     app:layout_constraintStart_toStartOf="@id/iv_explore"
                     app:layout_constraintTop_toBottomOf="@id/iv_explore"
-                    android:text="Eksplor"
+                    android:text="@string/eksplor"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
 
@@ -310,13 +334,14 @@
                 app:layout_constraintEnd_toStartOf="@id/iv_go_car"
                 android:scaleType="centerCrop"
                 android:src="@drawable/go_ride"
-                android:background="@drawable/bg_white_corner_10"/>
+                android:background="@drawable/bg_white_corner_10"
+                android:contentDescription="@string/content_img" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="GoRide"
+                android:text="@string/goride"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/iv_go_ride"
                 app:layout_constraintStart_toStartOf="@id/iv_go_ride"
@@ -332,13 +357,14 @@
                 app:layout_constraintEnd_toStartOf="@id/iv_go_food"
                 android:scaleType="centerCrop"
                 android:src="@drawable/go_car"
-                android:background="@drawable/bg_white_corner_10"/>
+                android:background="@drawable/bg_white_corner_10"
+                android:contentDescription="@string/content_img" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="GoCar"
+                android:text="@string/gocar"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/iv_go_car"
                 app:layout_constraintStart_toStartOf="@id/iv_go_car"
@@ -354,13 +380,14 @@
                 app:layout_constraintStart_toEndOf="@id/iv_go_car"
                 android:scaleType="centerCrop"
                 android:src="@drawable/go_food"
-                android:background="@drawable/bg_white_corner_10"/>
+                android:background="@drawable/bg_white_corner_10"
+                android:contentDescription="@string/content_img" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="GoFood"
+                android:text="@string/gofood"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/iv_go_food"
                 app:layout_constraintStart_toStartOf="@id/iv_go_food"
@@ -371,18 +398,20 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/cl_payment"
-                app:layout_constraintStart_toEndOf="@id/iv_go_food"
+                android:background="@drawable/bg_white_corner_10"
+                android:contentDescription="@string/content_img"
                 android:scaleType="centerCrop"
                 android:src="@drawable/go_send"
-                android:background="@drawable/bg_white_corner_10"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_go_food"
+                app:layout_constraintTop_toBottomOf="@id/cl_payment"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="GoSend"
+                android:text="@string/gosend"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/iv_go_send"
                 app:layout_constraintStart_toStartOf="@id/iv_go_send"
@@ -398,14 +427,15 @@
                 app:layout_constraintTop_toBottomOf="@id/iv_go_ride"
                 android:scaleType="centerCrop"
                 android:src="@drawable/go_mart"
-                android:background="@drawable/bg_white_corner_10"/>
+                android:background="@drawable/bg_white_corner_10"
+                android:contentDescription="@string/content_img" />
 
             <TextView
                 android:id="@+id/tv_go_mart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="GoMart"
+                android:text="@string/gomart"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/iv_go_mart"
                 app:layout_constraintStart_toStartOf="@id/iv_go_mart"
@@ -416,18 +446,20 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="32dp"
+                android:background="@drawable/bg_white_corner_10"
+                android:contentDescription="@string/content_img"
+                android:scaleType="centerCrop"
+                android:src="@drawable/go_pulsa"
                 app:layout_constraintEnd_toEndOf="@id/iv_go_car"
                 app:layout_constraintStart_toStartOf="@id/iv_go_car"
                 app:layout_constraintTop_toBottomOf="@id/iv_go_car"
-                android:scaleType="centerCrop"
-                android:src="@drawable/go_pulsa"
-                android:background="@drawable/bg_white_corner_10"/>
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="GoPulsa"
+                android:text="@string/gopulsa"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/iv_go_pulsa"
                 app:layout_constraintStart_toStartOf="@id/iv_go_pulsa"
@@ -438,18 +470,20 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="32dp"
+                android:background="@drawable/bg_white_corner_10"
+                android:contentDescription="@string/content_img"
+                android:scaleType="centerCrop"
+                android:src="@drawable/check_in"
                 app:layout_constraintEnd_toEndOf="@id/iv_go_food"
                 app:layout_constraintStart_toStartOf="@id/iv_go_food"
                 app:layout_constraintTop_toBottomOf="@id/iv_go_food"
-                android:scaleType="centerCrop"
-                android:src="@drawable/check_in"
-                android:background="@drawable/bg_white_corner_10"/>
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="Check in"
+                android:text="@string/check_in"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/iv_check_in"
                 app:layout_constraintStart_toStartOf="@id/iv_check_in"
@@ -465,14 +499,15 @@
                 app:layout_constraintTop_toBottomOf="@id/iv_go_send"
                 android:scaleType="centerCrop"
                 android:src="@drawable/another"
-                android:background="@drawable/bg_white_corner_10"/>
+                android:background="@drawable/bg_white_corner_10"
+                android:contentDescription="@string/content_img" />
 
             <TextView
                 android:id="@+id/tv_another"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="Lainnya"
+                android:text="@string/another"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/iv_another"
                 app:layout_constraintStart_toStartOf="@id/iv_another"
@@ -492,14 +527,15 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/banner_xp"/>
+                    android:src="@drawable/banner_xp"
+                    android:contentDescription="@string/content_img" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="66dp"
                     android:layout_marginTop="4dp"
-                    android:text="193 XP lagi ada Harta Karun"
+                    android:text="@string/value_xp"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -517,18 +553,19 @@
                     android:layout_gravity="bottom"
                     android:layout_marginStart="66dp"
                     android:layout_marginBottom="4dp"
-                    android:drawableStart="@drawable/ic_hourglass"
                     android:gravity="center"
-                    android:text="Harta Karun bentar lagi hilang"
+                    android:text="@string/title_notif"
                     android:textSize="12sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_hourglass" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end|center_vertical"
                     android:layout_marginEnd="20dp"
-                    android:src="@drawable/ic_arrow_right" />
+                    android:src="@drawable/ic_arrow_right"
+                    android:contentDescription="@string/content_img" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -537,7 +574,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="20dp"
-                android:text="Akses cepat"
+                android:text="@string/title_shortcut"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -570,7 +607,7 @@
                         android:drawableStart="@drawable/voucher"
                         android:drawableEnd="@drawable/ic_arrow_right"
                         android:paddingHorizontal="16dp"
-                        android:text="Ada voucher ngaggur, nih"
+                        android:text="@string/button_voucher"
                         android:textAllCaps="false" />
 
                     <View
@@ -592,7 +629,7 @@
                         android:drawableStart="@drawable/resto"
                         android:drawableEnd="@drawable/ic_arrow_right"
                         android:paddingHorizontal="16dp"
-                        android:text="Restoran terdekat"
+                        android:text="@string/button_resto"
                         android:textAllCaps="false"
                         app:layout_constraintTop_toBottomOf="@id/v_xline"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -620,11 +657,13 @@
                         android:id="@+id/iv_banner_ads"
                         android:layout_width="match_parent"
                         android:layout_height="128dp"
+                        android:contentDescription="@string/content_img"
                         android:scaleType="centerCrop"
                         android:src="@drawable/header"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ImageContrastCheck" />
 
                     <TextView
                         android:id="@+id/tv_title_ads"
@@ -635,7 +674,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/iv_banner_ads"
                         app:drawableEndCompat="@drawable/ic_wallet"
-                        android:text="Festival idaman perempuan! "/>
+                        android:text="@string/desc_title"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -646,7 +685,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/tv_title_ads"
-                        android:text="Temukan kebutuhan cantik-mu hemat pakai GoPay dengan cashback 50%. Klik!"/>
+                        android:text="@string/desc_sub_tittle"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -670,12 +709,14 @@
                 android:id="@+id/ib_home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/tv_home"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/ib_promotion"
                 android:background="@color/white"
-                android:src="@drawable/ic_home" />
+                android:contentDescription="@string/content_img"
+                android:src="@drawable/ic_home"
+                app:layout_constraintBottom_toTopOf="@id/tv_home"
+                app:layout_constraintEnd_toStartOf="@id/ib_promotion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/tv_home"
@@ -685,18 +726,20 @@
                 app:layout_constraintEnd_toEndOf="@id/ib_home"
                 app:layout_constraintTop_toBottomOf="@id/ib_home"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:text="Beranda"/>
+                android:text="@string/button_home"/>
 
             <ImageButton
                 android:id="@+id/ib_promotion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/tv_promotion"
-                app:layout_constraintStart_toEndOf="@id/ib_home"
-                app:layout_constraintEnd_toStartOf="@id/ib_order"
                 android:background="@color/white"
-                android:src="@drawable/promo"/>
+                android:contentDescription="@string/content_img"
+                android:src="@drawable/promo"
+                app:layout_constraintBottom_toTopOf="@id/tv_promotion"
+                app:layout_constraintEnd_toStartOf="@id/ib_order"
+                app:layout_constraintStart_toEndOf="@id/ib_home"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/tv_promotion"
@@ -706,18 +749,20 @@
                 app:layout_constraintEnd_toEndOf="@id/ib_promotion"
                 app:layout_constraintTop_toBottomOf="@id/ib_promotion"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:text="Promo"/>
+                android:text="@string/button_promo"/>
 
             <ImageButton
                 android:id="@+id/ib_order"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/white"
+                android:contentDescription="@string/content_img"
+                android:src="@drawable/order"
                 app:layout_constraintBottom_toTopOf="@id/tv_order"
                 app:layout_constraintEnd_toEndOf="@id/ib_chat"
                 app:layout_constraintStart_toEndOf="@id/ib_promotion"
-                android:background="@color/white"
-                android:src="@drawable/order" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ImageContrastCheck,TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/tv_order"
@@ -727,18 +772,20 @@
                 app:layout_constraintEnd_toEndOf="@id/ib_order"
                 app:layout_constraintTop_toBottomOf="@id/ib_order"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:text="Pesanan"/>
+                android:text="@string/button_order"/>
 
             <ImageButton
                 android:id="@+id/ib_chat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/white"
+                android:contentDescription="@string/content_img"
+                android:src="@drawable/chat"
                 app:layout_constraintBottom_toTopOf="@id/tv_chat"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/ib_order"
-                android:background="@color/white"
-                android:src="@drawable/chat" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/tv_chat"
@@ -748,7 +795,7 @@
                 app:layout_constraintEnd_toEndOf="@id/ib_chat"
                 app:layout_constraintTop_toBottomOf="@id/ib_chat"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:text="Chat"/>
+                android:text="@string/button_chat"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.bottomnavigation.BottomNavigationView>
