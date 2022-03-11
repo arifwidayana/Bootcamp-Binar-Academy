@@ -74,18 +74,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:drawableStartCompat="@drawable/ic_location"
-                android:drawableEnd="@drawable/ic_arrow_down"
                 android:text="Dikirim ke alamat bekasi"
                 android:textSize="12sp"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                app:drawableEndCompat="@drawable/ic_arrow_down" />
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_finance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/toolbar"
-                app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                android:layout_marginTop="-8dp"
                 android:layout_marginHorizontal="16dp"
                 android:background="@color/grey"
                 app:cardCornerRadius="10dp">
@@ -93,10 +94,10 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="12dp">
+                    android:padding="8dp">
 
                     <ImageView
-                        android:id="@+id/iv_pay"
+                        android:id="@+id/iv_balance_pay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_wallet"
@@ -105,23 +106,409 @@
                         app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
+                        android:id="@+id/tv_balance_pay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="4dp"
+                        app:layout_constraintStart_toEndOf="@id/iv_balance_pay"
+                        app:layout_constraintBottom_toTopOf="@id/tv_balance_coin"
+                        app:layout_constraintTop_toTopOf="parent"
                         android:text="Rp109.048"
-                        app:layout_constraintStart_toEndOf=""
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black_80"/>
 
                     <TextView
+                        android:id="@+id/tv_balance_coin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="4dp"
+                        app:layout_constraintStart_toEndOf="@id/iv_balance_pay"
+                        app:layout_constraintTop_toBottomOf="@id/tv_balance_pay"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         android:text="164.433 Coins"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/iv_pay" />
+                        android:textSize="10sp"/>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guide_middle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="174dp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_balance_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/ic_wallet"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/guide_middle"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_member"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        app:layout_constraintStart_toEndOf="@id/iv_balance_coin"
+                        app:layout_constraintBottom_toTopOf="@id/tv_balance_kupon"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="Member Gold"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black_80"
+                        tools:ignore="SmallSp" />
+
+                    <TextView
+                        android:id="@+id/tv_balance_kupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        app:layout_constraintStart_toEndOf="@id/iv_balance_coin"
+                        app:layout_constraintTop_toBottomOf="@id/tv_member"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="23 Kupon"
+                        android:textSize="10sp"/>
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                android:id="@+id/hsf_feature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_finance"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/ib_official_store"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tv_official_store"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/bg_white_corner_10"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/official_store"/>
+
+                    <TextView
+                        android:id="@+id/tv_official_store"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ib_official_store"
+                        app:layout_constraintStart_toStartOf="@id/ib_official_store"
+                        app:layout_constraintEnd_toEndOf="@id/ib_official_store"
+                        android:text="Official Store"
+                        android:textAlignment="center"
+                        android:textSize="10sp"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_see_all"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintStart_toEndOf="@id/ib_official_store"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tv_see_all"
+                        android:layout_marginStart="32dp"
+                        android:background="@drawable/bg_white_corner_10"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/see_all"/>
+
+                    <TextView
+                        android:id="@+id/tv_see_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ib_see_all"
+                        app:layout_constraintStart_toStartOf="@id/ib_see_all"
+                        app:layout_constraintEnd_toEndOf="@id/ib_see_all"
+                        android:text="Lihat Semua"
+                        android:textAlignment="center"
+                        android:textSize="10sp"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_daily_necessities"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintStart_toEndOf="@id/ib_see_all"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tv_daily_necessities"
+                        android:layout_marginStart="32dp"
+                        android:background="@drawable/bg_white_corner_10"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/shopping"/>
+
+                    <TextView
+                        android:id="@+id/tv_daily_necessities"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ib_daily_necessities"
+                        app:layout_constraintStart_toStartOf="@id/ib_daily_necessities"
+                        app:layout_constraintEnd_toEndOf="@id/ib_daily_necessities"
+                        android:text="Kebutuhan Harian"
+                        android:textAlignment="center"
+                        android:textSize="10sp"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_handphone_tablet"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintStart_toEndOf="@id/ib_daily_necessities"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tv_daily_necessities"
+                        android:layout_marginStart="32dp"
+                        android:background="@drawable/bg_white_corner_10"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/tablet"/>
+
+                    <TextView
+                        android:id="@+id/tv_handphone_tablet"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ib_handphone_tablet"
+                        app:layout_constraintStart_toStartOf="@id/ib_handphone_tablet"
+                        app:layout_constraintEnd_toEndOf="@id/ib_handphone_tablet"
+                        android:text="Handphone &amp; Tablet"
+                        android:textAlignment="center"
+                        android:textSize="10sp"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_top_up_pay"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintStart_toEndOf="@id/ib_handphone_tablet"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tv_daily_necessities"
+                        android:layout_marginStart="32dp"
+                        android:background="@drawable/bg_white_corner_10"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/top_up"/>
+
+                    <TextView
+                        android:id="@+id/tv_top_up_pay"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ib_top_up_pay"
+                        app:layout_constraintStart_toStartOf="@id/ib_top_up_pay"
+                        app:layout_constraintEnd_toEndOf="@id/ib_top_up_pay"
+                        android:text="Top-Up &amp; Tagihan"
+                        android:textAlignment="center"
+                        android:textSize="10sp"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_finance"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintStart_toEndOf="@id/ib_top_up_pay"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tv_daily_necessities"
+                        android:layout_marginStart="32dp"
+                        android:background="@drawable/bg_white_corner_10"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/finance"/>
+
+                    <TextView
+                        android:id="@+id/tv_finance"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ib_finance"
+                        app:layout_constraintStart_toStartOf="@id/ib_finance"
+                        app:layout_constraintEnd_toEndOf="@id/ib_finance"
+                        android:text="Keuangan"
+                        android:textAlignment="center"
+                        android:textSize="10sp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/hsf_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hsf_feature">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_banner_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="352dp"
+                            android:layout_height="92dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/banner_1" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_banner_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toEndOf="@id/cv_banner_1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="352dp"
+                            android:layout_height="92dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/banner_2" />
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/hsf_more_feature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hsf_ads"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/ib_peduli_lindungi"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tv_peduli_lindungi"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/bg_white_corner_10"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_peduli_lindungi"/>
+
+                    <TextView
+                        android:id="@+id/tv_peduli_lindungi"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ib_peduli_lindungi"
+                        app:layout_constraintStart_toStartOf="@id/ib_peduli_lindungi"
+                        app:layout_constraintEnd_toEndOf="@id/ib_peduli_lindungi"
+                        android:text="Peduli Lindungi"
+                        android:textAlignment="center"
+                        android:textSize="10sp"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_local_proud"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintStart_toEndOf="@id/ib_peduli_lindungi"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tv_local_proud"
+                        android:layout_marginStart="32dp"
+                        android:background="@drawable/bg_white_corner_10"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/local_proud"/>
+
+                    <TextView
+                        android:id="@+id/tv_local_proud"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ib_local_proud"
+                        app:layout_constraintStart_toStartOf="@id/ib_local_proud"
+                        app:layout_constraintEnd_toEndOf="@id/ib_local_proud"
+                        android:text="Bangga Lokal"
+                        android:textAlignment="center"
+                        android:textSize="10sp"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_bazar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintStart_toEndOf="@id/ib_local_proud"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tv_bazar"
+                        android:layout_marginStart="32dp"
+                        android:background="@drawable/bg_white_corner_10"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bazar"/>
+
+                    <TextView
+                        android:id="@+id/tv_bazar"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ib_bazar"
+                        app:layout_constraintStart_toStartOf="@id/ib_bazar"
+                        app:layout_constraintEnd_toEndOf="@id/ib_bazar"
+                        android:text="Bazar Hari Ini"
+                        android:textAlignment="center"
+                        android:textSize="10sp"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_live"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintStart_toEndOf="@id/ib_bazar"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tv_live"
+                        android:layout_marginStart="32dp"
+                        android:background="@drawable/bg_white_corner_10"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/live_shopping"/>
+
+                    <TextView
+                        android:id="@+id/tv_live"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ib_live"
+                        app:layout_constraintStart_toStartOf="@id/ib_live"
+                        app:layout_constraintEnd_toEndOf="@id/ib_live"
+                        android:text="Live Shopping"
+                        android:textAlignment="center"
+                        android:textSize="10sp"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_tokped"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintStart_toEndOf="@id/ib_live"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tv_tokped"
+                        android:layout_marginStart="32dp"
+                        android:background="@drawable/bg_white_corner_10"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/voucher"/>
+
+                    <TextView
+                        android:id="@+id/tv_tokped"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ib_tokped"
+                        app:layout_constraintStart_toStartOf="@id/ib_tokped"
+                        app:layout_constraintEnd_toEndOf="@id/ib_tokped"
+                        android:text="Tokopedia Seru"
+                        android:textAlignment="center"
+                        android:textSize="10sp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

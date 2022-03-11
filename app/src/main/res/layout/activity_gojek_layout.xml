@@ -248,7 +248,7 @@
                 </ScrollView>
 
                 <ImageButton
-                    android:id="@+id/iv_pay"
+                    android:id="@+id/iv_balance_pay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -265,9 +265,9 @@
                     android:id="@+id/tv_pay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintEnd_toEndOf="@id/iv_pay"
-                    app:layout_constraintStart_toStartOf="@id/iv_pay"
-                    app:layout_constraintTop_toBottomOf="@id/iv_pay"
+                    app:layout_constraintEnd_toEndOf="@id/iv_balance_pay"
+                    app:layout_constraintStart_toStartOf="@id/iv_balance_pay"
+                    app:layout_constraintTop_toBottomOf="@id/iv_balance_pay"
                     android:text="@string/bayar"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
@@ -282,7 +282,7 @@
                     android:src="@drawable/ic_add"
                     app:layout_constraintBottom_toTopOf="@id/tv_top_up"
                     app:layout_constraintEnd_toStartOf="@id/iv_explore"
-                    app:layout_constraintStart_toEndOf="@id/iv_pay"
+                    app:layout_constraintStart_toEndOf="@id/iv_balance_pay"
                     app:layout_constraintTop_toTopOf="@id/cl_payment"
                     tools:ignore="TouchTargetSizeCheck" />
 
