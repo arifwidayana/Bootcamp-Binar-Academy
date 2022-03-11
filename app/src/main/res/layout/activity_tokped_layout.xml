@@ -1510,7 +1510,7 @@
                 android:contentDescription="@string/content_img"
                 android:src="@drawable/chat"
                 app:layout_constraintBottom_toTopOf="@id/tv_whislist"
-                app:layout_constraintEnd_toEndOf="@id/ib_transaction"
+                app:layout_constraintEnd_toStartOf="@id/ib_transaction"
                 app:layout_constraintStart_toEndOf="@id/ib_official"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
