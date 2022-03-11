@@ -38,32 +38,37 @@
                     android:paddingStart="8dp"
                     android:paddingEnd="78dp"
                     android:background="@drawable/bg_white_corner_10"
-                    android:hint=" Cari powerbank"
-                    android:textSize="12sp"/>
+                    android:hint="@string/cari_powerbank"
+                    android:textSize="12sp"
+                    tools:ignore="Autofill,TextFields" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:src="@drawable/ic_post"/>
+                    android:src="@drawable/ic_post"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/ic_notifications"/>
+                    android:src="@drawable/ic_notifications"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/ic_cart"/>
+                    android:src="@drawable/ic_cart"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/ic_menu"/>
+                    android:src="@drawable/ic_menu"
+                    tools:ignore="ContentDescription" />
             </androidx.appcompat.widget.Toolbar>
 
             <TextView
@@ -75,7 +80,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:drawableStartCompat="@drawable/ic_location"
-                android:text="Dikirim ke alamat bekasi"
+                android:text="@string/dikirim_ke_alamat_bekasi"
                 android:textSize="12sp"
                 android:textColor="@color/white"
                 app:drawableEndCompat="@drawable/ic_arrow_down" />
@@ -104,7 +109,8 @@
                         android:src="@drawable/ic_wallet"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_balance_pay"
@@ -114,10 +120,11 @@
                         app:layout_constraintStart_toEndOf="@id/iv_balance_pay"
                         app:layout_constraintBottom_toTopOf="@id/tv_balance_coin"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:text="Rp109.048"
+                        android:text="@string/rp109_048"
                         android:textSize="10sp"
                         android:textStyle="bold"
-                        android:textColor="@color/Black_80"/>
+                        android:textColor="@color/Black_80"
+                        tools:ignore="SmallSp" />
 
                     <TextView
                         android:id="@+id/tv_balance_coin"
@@ -127,8 +134,9 @@
                         app:layout_constraintStart_toEndOf="@id/iv_balance_pay"
                         app:layout_constraintTop_toBottomOf="@id/tv_balance_pay"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        android:text="164.433 Coins"
-                        android:textSize="10sp"/>
+                        android:text="@string/_164_433_coins"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                     <androidx.constraintlayout.widget.Guideline
                         android:id="@+id/guide_middle"
@@ -145,7 +153,8 @@
                         android:src="@drawable/ic_wallet"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@id/guide_middle"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_member"
@@ -155,7 +164,7 @@
                         app:layout_constraintStart_toEndOf="@id/iv_balance_coin"
                         app:layout_constraintBottom_toTopOf="@id/tv_balance_kupon"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:text="Member Gold"
+                        android:text="@string/member_gold"
                         android:textSize="10sp"
                         android:textStyle="bold"
                         android:textColor="@color/Black_80"
@@ -169,8 +178,9 @@
                         app:layout_constraintStart_toEndOf="@id/iv_balance_coin"
                         app:layout_constraintTop_toBottomOf="@id/tv_member"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        android:text="23 Kupon"
-                        android:textSize="10sp"/>
+                        android:text="@string/_23_kupon"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -186,7 +196,7 @@
                 android:layout_marginTop="16dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <ImageButton
@@ -199,7 +209,8 @@
                         android:layout_marginStart="16dp"
                         android:background="@drawable/bg_white_corner_10"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/official_store"/>
+                        android:src="@drawable/official_store"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_official_store"
@@ -208,9 +219,10 @@
                         app:layout_constraintTop_toBottomOf="@id/ib_official_store"
                         app:layout_constraintStart_toStartOf="@id/ib_official_store"
                         app:layout_constraintEnd_toEndOf="@id/ib_official_store"
-                        android:text="Official Store"
+                        android:text="@string/official_store"
                         android:textAlignment="center"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                     <ImageButton
                         android:id="@+id/ib_see_all"
@@ -222,7 +234,8 @@
                         android:layout_marginStart="32dp"
                         android:background="@drawable/bg_white_corner_10"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/see_all"/>
+                        android:src="@drawable/see_all"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_see_all"
@@ -231,9 +244,10 @@
                         app:layout_constraintTop_toBottomOf="@id/ib_see_all"
                         app:layout_constraintStart_toStartOf="@id/ib_see_all"
                         app:layout_constraintEnd_toEndOf="@id/ib_see_all"
-                        android:text="Lihat Semua"
+                        android:text="@string/lihat_semua"
                         android:textAlignment="center"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                     <ImageButton
                         android:id="@+id/ib_daily_necessities"
@@ -245,7 +259,8 @@
                         android:layout_marginStart="32dp"
                         android:background="@drawable/bg_white_corner_10"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/shopping"/>
+                        android:src="@drawable/shopping"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_daily_necessities"
@@ -254,9 +269,10 @@
                         app:layout_constraintTop_toBottomOf="@id/ib_daily_necessities"
                         app:layout_constraintStart_toStartOf="@id/ib_daily_necessities"
                         app:layout_constraintEnd_toEndOf="@id/ib_daily_necessities"
-                        android:text="Kebutuhan Harian"
+                        android:text="@string/kebutuhan_harian"
                         android:textAlignment="center"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                     <ImageButton
                         android:id="@+id/ib_handphone_tablet"
@@ -268,7 +284,8 @@
                         android:layout_marginStart="32dp"
                         android:background="@drawable/bg_white_corner_10"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/tablet"/>
+                        android:src="@drawable/tablet"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_handphone_tablet"
@@ -277,9 +294,10 @@
                         app:layout_constraintTop_toBottomOf="@id/ib_handphone_tablet"
                         app:layout_constraintStart_toStartOf="@id/ib_handphone_tablet"
                         app:layout_constraintEnd_toEndOf="@id/ib_handphone_tablet"
-                        android:text="Handphone &amp; Tablet"
+                        android:text="@string/handphone_amp_tablet"
                         android:textAlignment="center"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                     <ImageButton
                         android:id="@+id/ib_top_up_pay"
@@ -291,7 +309,8 @@
                         android:layout_marginStart="32dp"
                         android:background="@drawable/bg_white_corner_10"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/top_up"/>
+                        android:src="@drawable/top_up"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_top_up_pay"
@@ -300,9 +319,10 @@
                         app:layout_constraintTop_toBottomOf="@id/ib_top_up_pay"
                         app:layout_constraintStart_toStartOf="@id/ib_top_up_pay"
                         app:layout_constraintEnd_toEndOf="@id/ib_top_up_pay"
-                        android:text="Top-Up &amp; Tagihan"
+                        android:text="@string/top_up_amp_tagihan"
                         android:textAlignment="center"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                     <ImageButton
                         android:id="@+id/ib_finance"
@@ -314,7 +334,8 @@
                         android:layout_marginStart="32dp"
                         android:background="@drawable/bg_white_corner_10"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/finance"/>
+                        android:src="@drawable/finance"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_finance"
@@ -323,9 +344,10 @@
                         app:layout_constraintTop_toBottomOf="@id/ib_finance"
                         app:layout_constraintStart_toStartOf="@id/ib_finance"
                         app:layout_constraintEnd_toEndOf="@id/ib_finance"
-                        android:text="Keuangan"
+                        android:text="@string/keuangan"
                         android:textAlignment="center"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </HorizontalScrollView>
 
@@ -340,7 +362,7 @@
                 app:layout_constraintTop_toBottomOf="@id/hsf_feature">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <androidx.cardview.widget.CardView
@@ -356,7 +378,8 @@
                             android:layout_width="352dp"
                             android:layout_height="92dp"
                             android:scaleType="fitXY"
-                            android:src="@drawable/banner_1" />
+                            android:src="@drawable/banner_1"
+                            tools:ignore="ContentDescription" />
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -373,7 +396,8 @@
                             android:layout_width="352dp"
                             android:layout_height="92dp"
                             android:scaleType="fitXY"
-                            android:src="@drawable/banner_2" />
+                            android:src="@drawable/banner_2"
+                            tools:ignore="ContentDescription" />
                     </androidx.cardview.widget.CardView>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </HorizontalScrollView>
@@ -402,7 +426,8 @@
                         android:layout_marginStart="16dp"
                         android:background="@drawable/bg_white_corner_10"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_peduli_lindungi"/>
+                        android:src="@drawable/ic_peduli_lindungi"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_peduli_lindungi"
@@ -411,9 +436,10 @@
                         app:layout_constraintTop_toBottomOf="@id/ib_peduli_lindungi"
                         app:layout_constraintStart_toStartOf="@id/ib_peduli_lindungi"
                         app:layout_constraintEnd_toEndOf="@id/ib_peduli_lindungi"
-                        android:text="Peduli Lindungi"
+                        android:text="@string/peduli_lindungi"
                         android:textAlignment="center"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                     <ImageButton
                         android:id="@+id/ib_local_proud"
@@ -425,7 +451,8 @@
                         android:layout_marginStart="32dp"
                         android:background="@drawable/bg_white_corner_10"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/local_proud"/>
+                        android:src="@drawable/local_proud"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_local_proud"
@@ -434,9 +461,10 @@
                         app:layout_constraintTop_toBottomOf="@id/ib_local_proud"
                         app:layout_constraintStart_toStartOf="@id/ib_local_proud"
                         app:layout_constraintEnd_toEndOf="@id/ib_local_proud"
-                        android:text="Bangga Lokal"
+                        android:text="@string/bangga_lokal"
                         android:textAlignment="center"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                     <ImageButton
                         android:id="@+id/ib_bazar"
@@ -448,7 +476,8 @@
                         android:layout_marginStart="32dp"
                         android:background="@drawable/bg_white_corner_10"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/bazar"/>
+                        android:src="@drawable/bazar"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_bazar"
@@ -457,9 +486,10 @@
                         app:layout_constraintTop_toBottomOf="@id/ib_bazar"
                         app:layout_constraintStart_toStartOf="@id/ib_bazar"
                         app:layout_constraintEnd_toEndOf="@id/ib_bazar"
-                        android:text="Bazar Hari Ini"
+                        android:text="@string/bazar_hari_ini"
                         android:textAlignment="center"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                     <ImageButton
                         android:id="@+id/ib_live"
@@ -471,7 +501,8 @@
                         android:layout_marginStart="32dp"
                         android:background="@drawable/bg_white_corner_10"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/live_shopping"/>
+                        android:src="@drawable/live_shopping"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_live"
@@ -480,9 +511,10 @@
                         app:layout_constraintTop_toBottomOf="@id/ib_live"
                         app:layout_constraintStart_toStartOf="@id/ib_live"
                         app:layout_constraintEnd_toEndOf="@id/ib_live"
-                        android:text="Live Shopping"
+                        android:text="@string/live_shopping"
                         android:textAlignment="center"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                     <ImageButton
                         android:id="@+id/ib_tokped"
@@ -494,7 +526,8 @@
                         android:layout_marginStart="32dp"
                         android:background="@drawable/bg_white_corner_10"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/voucher"/>
+                        android:src="@drawable/voucher"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tv_tokped"
@@ -503,9 +536,10 @@
                         app:layout_constraintTop_toBottomOf="@id/ib_tokped"
                         app:layout_constraintStart_toStartOf="@id/ib_tokped"
                         app:layout_constraintEnd_toEndOf="@id/ib_tokped"
-                        android:text="Tokopedia Seru"
+                        android:text="@string/tokopedia_seru"
                         android:textAlignment="center"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </HorizontalScrollView>
@@ -518,7 +552,7 @@
                 android:layout_marginStart="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/hsf_more_feature"
-                android:text="Video menarik untukmu"
+                android:text="@string/video_menarik_untukmu"
                 android:textStyle="bold"
                 android:textColor="@color/Black_80"/>
 
@@ -530,7 +564,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/hsf_more_feature"
                 android:background="@drawable/bg_white"
-                android:text="Lihat Semua"
+                android:text="@string/lihat_semua"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:textColor="@color/Green_60"
@@ -547,7 +581,7 @@
                 app:layout_constraintTop_toBottomOf="@id/tv_video_live">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <androidx.cardview.widget.CardView
@@ -570,7 +604,8 @@
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/banner_1"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="ContentDescription" />
 
                             <androidx.cardview.widget.CardView
                                 android:layout_width="wrap_content"
@@ -586,11 +621,12 @@
                                     android:layout_height="wrap_content"
                                     android:alpha=".9"
                                     android:background="@color/Black_80"
-                                    android:drawableStart="@drawable/ic_eye"
                                     android:paddingHorizontal="4dp"
-                                    android:text="  2.5 rb"
+                                    android:text="@string/_2_5_rb"
                                     android:textColor="@color/white"
-                                    android:textSize="10sp" />
+                                    android:textSize="10sp"
+                                    tools:ignore="SmallSp"
+                                    app:drawableStartCompat="@drawable/ic_eye" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
@@ -609,11 +645,12 @@
                                     android:background="@color/Green_50"
                                     android:paddingHorizontal="4dp"
                                     android:paddingVertical="2dp"
-                                    android:text="  Kupon Spesial"
+                                    android:text="@string/kupon_spesial"
                                     android:textColor="@color/white"
                                     android:textSize="8sp"
                                     android:textStyle="bold"
-                                    app:drawableStartCompat="@drawable/ic_promo" />
+                                    app:drawableStartCompat="@drawable/ic_promo"
+                                    tools:ignore="SmallSp" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
@@ -636,19 +673,21 @@
                                         android:id="@+id/tv_sub_title_one"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="Keep and Calm With UCHII"
+                                        android:text="@string/keep_and_calm_with_uchii"
                                         android:textSize="10sp"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
-                                        app:layout_constraintTop_toTopOf="parent" />
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        tools:ignore="SmallSp,TooDeepLayout" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="uchii store"
+                                        android:text="@string/uchii_store"
                                         android:textSize="8sp"
                                         app:layout_constraintStart_toStartOf="parent"
-                                        app:layout_constraintTop_toBottomOf="@id/tv_sub_title_one" />
+                                        app:layout_constraintTop_toBottomOf="@id/tv_sub_title_one"
+                                        tools:ignore="SmallSp" />
                                 </androidx.constraintlayout.widget.ConstraintLayout>
                             </androidx.cardview.widget.CardView>
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -675,7 +714,8 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 android:src="@drawable/banner_2"
-                                android:scaleType="centerCrop"/>
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
 
                             <androidx.cardview.widget.CardView
                                 android:layout_width="wrap_content"
@@ -690,12 +730,13 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:paddingHorizontal="4dp"
-                                    android:drawableStart="@drawable/ic_eye"
                                     android:background="@color/Black_80"
                                     android:alpha=".9"
-                                    android:text="  2 rb"
+                                    android:text="@string/_2_rb"
                                     android:textSize="10sp"
-                                    android:textColor="@color/white"/>
+                                    android:textColor="@color/white"
+                                    tools:ignore="SmallSp"
+                                    app:drawableStartCompat="@drawable/ic_eye" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
@@ -714,11 +755,12 @@
                                     android:background="@color/Green_50"
                                     android:paddingHorizontal="4dp"
                                     android:paddingVertical="2dp"
-                                    android:text="  Kupon Spesial"
+                                    android:text="@string/kupon_spesial"
                                     android:textColor="@color/white"
                                     android:textSize="8sp"
                                     android:textStyle="bold"
-                                    app:drawableStartCompat="@drawable/ic_promo" />
+                                    app:drawableStartCompat="@drawable/ic_promo"
+                                    tools:ignore="SmallSp" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
@@ -744,16 +786,18 @@
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        android:text="Alat Facial Treatment cuman 100rb?"
-                                        android:textSize="10sp"/>
+                                        android:text="@string/alat_facial_treatment_cuman_100rb"
+                                        android:textSize="10sp"
+                                        tools:ignore="SmallSp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toBottomOf="@id/tv_sub_title_two"
-                                        android:text="Tokopedia Play"
-                                        android:textSize="8sp"/>
+                                        android:text="@string/tokopedia_play"
+                                        android:textSize="8sp"
+                                        tools:ignore="SmallSp" />
                                 </androidx.constraintlayout.widget.ConstraintLayout>
                             </androidx.cardview.widget.CardView>
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -780,7 +824,8 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 android:src="@drawable/banner_1"
-                                android:scaleType="centerCrop"/>
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription,TooManyViews" />
 
                             <androidx.cardview.widget.CardView
                                 android:layout_width="wrap_content"
@@ -795,12 +840,13 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:paddingHorizontal="4dp"
-                                    android:drawableStart="@drawable/ic_eye"
                                     android:background="@color/Black_80"
                                     android:alpha=".9"
-                                    android:text="  4.8 rb"
+                                    android:text="@string/_4_8_rb"
                                     android:textSize="10sp"
-                                    android:textColor="@color/white"/>
+                                    android:textColor="@color/white"
+                                    tools:ignore="SmallSp"
+                                    app:drawableStartCompat="@drawable/ic_eye" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
@@ -819,11 +865,12 @@
                                     android:background="@color/Green_50"
                                     android:paddingHorizontal="4dp"
                                     android:paddingVertical="2dp"
-                                    android:text="  Kupon Spesial"
+                                    android:text="@string/kupon_spesial"
                                     android:textColor="@color/white"
                                     android:textSize="8sp"
                                     android:textStyle="bold"
-                                    app:drawableStartCompat="@drawable/ic_promo" />
+                                    app:drawableStartCompat="@drawable/ic_promo"
+                                    tools:ignore="SmallSp" />
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
@@ -849,16 +896,18 @@
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        android:text="Alat Facial Treatment cuman 100rb?"
-                                        android:textSize="10sp"/>
+                                        android:text="@string/alat_facial_treatment_cuman_100rb"
+                                        android:textSize="10sp"
+                                        tools:ignore="SmallSp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toBottomOf="@id/tv_sub_title_three"
-                                        android:text="Tokopedia Play"
-                                        android:textSize="8sp"/>
+                                        android:text="@string/tokopedia_play"
+                                        android:textSize="8sp"
+                                        tools:ignore="SmallSp" />
                                 </androidx.constraintlayout.widget.ConstraintLayout>
                             </androidx.cardview.widget.CardView>
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -874,7 +923,7 @@
                 android:layout_marginStart="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/hsf_live_video"
-                android:text="Kejar Diskon"
+                android:text="@string/kejar_diskon"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
@@ -885,7 +934,7 @@
                 android:layout_marginStart="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_discount"
-                android:text="Berakhir dalam"
+                android:text="@string/berakhir_dalam"
                 android:textSize="12sp"
                 android:textColor="@color/Black_80"/>
 
@@ -904,10 +953,11 @@
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="4dp"
                     android:drawableStart="@drawable/ic_time"
-                    android:text=" 09 menit 26 detik"
+                    android:text="@string/_09_menit_26_detik"
                     android:textSize="10sp"
                     android:textStyle="bold"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    tools:ignore="SmallSp,UseCompatTextViewDrawableXml" />
             </androidx.cardview.widget.CardView>
 
             <Button
@@ -917,7 +967,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="@id/tv_end_time"
                 android:background="@drawable/bg_white"
-                android:text="Lihat Semua"
+                android:text="@string/lihat_semua"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:textColor="@color/Green_60"
@@ -931,7 +981,8 @@
                 app:layout_constraintTop_toBottomOf="@id/tv_end_time"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:background="@color/Green_40"/>
+                android:background="@color/Green_40"
+                tools:ignore="ContentDescription" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_product_one"
@@ -956,7 +1007,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/bag_man"/>
+                        android:src="@drawable/bag_man"
+                        tools:ignore="ContentDescription" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -971,7 +1023,7 @@
                             android:layout_height="wrap_content"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:text="Rp 69.900"
+                            android:text="@string/rp_69_900"
                             android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="@color/Black_80"/>
@@ -990,9 +1042,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="2dp"
-                                android:text="26%"
+                                android:text="@string/_26"
                                 android:textSize="10sp"
-                                android:textColor="@color/Red_60"/>
+                                android:textColor="@color/Red_60"
+                                tools:ignore="SmallSp" />
                         </androidx.cardview.widget.CardView>
 
                         <TextView
@@ -1002,9 +1055,10 @@
                             app:layout_constraintBottom_toBottomOf="@id/cv_discount"
                             app:layout_constraintTop_toTopOf="@id/cv_discount"
                             android:padding="2dp"
-                            android:text="26%"
+                            android:text="@string/_26"
                             android:textSize="10sp"
-                            android:textColor="@color/Red_50"/>
+                            android:textColor="@color/Red_50"
+                            tools:ignore="SmallSp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1014,8 +1068,9 @@
                             app:layout_constraintBottom_toBottomOf="@id/cv_discount"
                             app:layout_constraintTop_toTopOf="@id/cv_discount"
                             android:foreground="@drawable/line_grey"
-                            android:text="Rp 94.900"
-                            android:textSize="8sp"/>
+                            android:text="@string/rp_94_900"
+                            android:textSize="8sp"
+                            tools:ignore="SmallSp,UnusedAttribute" />
 
                         <ImageView
                             android:id="@+id/iv_badge"
@@ -1024,7 +1079,8 @@
                             android:layout_marginTop="2dp"
                             app:layout_constraintTop_toBottomOf="@id/cv_discount"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:src="@drawable/official_store"/>
+                            android:src="@drawable/official_store"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1032,8 +1088,9 @@
                             android:layout_marginStart="2dp"
                             app:layout_constraintTop_toBottomOf="@id/cv_discount"
                             app:layout_constraintStart_toEndOf="@id/iv_badge"
-                            android:text="Jakarta Barat"
-                            android:textSize="10sp"/>
+                            android:text="@string/jakarta_barat"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
 
                         <ImageView
                             android:id="@+id/iv_free_deliver"
@@ -1042,7 +1099,8 @@
                             android:layout_marginTop="4dp"
                             app:layout_constraintTop_toBottomOf="@id/iv_badge"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:src="@drawable/ic_free_deliver"/>
+                            android:src="@drawable/ic_free_deliver"
+                            tools:ignore="ContentDescription" />
 
                         <ProgressBar
                             android:id="@+id/pb_load_one"
@@ -1061,9 +1119,10 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             android:layout_marginTop="4dp"
                             android:layout_marginBottom="4dp"
-                            android:text="Segera Habis"
+                            android:text="@string/segera_habis"
                             android:textSize="8sp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -1092,7 +1151,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/shoes_sandal"/>
+                        android:src="@drawable/shoes_sandal"
+                        tools:ignore="ContentDescription" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -1107,7 +1167,7 @@
                             android:layout_height="wrap_content"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:text="Rp 67.000"
+                            android:text="@string/rp_67_000"
                             android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="@color/Black_80"/>
@@ -1126,9 +1186,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="2dp"
-                                android:text="26%"
+                                android:text="@string/_26"
                                 android:textSize="10sp"
-                                android:textColor="@color/Red_60"/>
+                                android:textColor="@color/Red_60"
+                                tools:ignore="SmallSp" />
                         </androidx.cardview.widget.CardView>
 
                         <TextView
@@ -1138,9 +1199,10 @@
                             app:layout_constraintBottom_toBottomOf="@id/cv_discount_two"
                             app:layout_constraintTop_toTopOf="@id/cv_discount_two"
                             android:padding="2dp"
-                            android:text="38%"
+                            android:text="@string/_38"
                             android:textSize="10sp"
-                            android:textColor="@color/Red_50"/>
+                            android:textColor="@color/Red_50"
+                            tools:ignore="SmallSp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1150,8 +1212,9 @@
                             app:layout_constraintBottom_toBottomOf="@id/cv_discount_two"
                             app:layout_constraintTop_toTopOf="@id/cv_discount_two"
                             android:foreground="@drawable/line_grey"
-                            android:text="Rp 108.000"
-                            android:textSize="8sp"/>
+                            android:text="@string/rp_108_000"
+                            android:textSize="8sp"
+                            tools:ignore="SmallSp,UnusedAttribute" />
 
                         <ImageView
                             android:id="@+id/iv_badge_two"
@@ -1160,7 +1223,8 @@
                             android:layout_marginTop="2dp"
                             app:layout_constraintTop_toBottomOf="@id/cv_discount_two"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:src="@drawable/official_store"/>
+                            android:src="@drawable/official_store"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1168,8 +1232,9 @@
                             android:layout_marginStart="2dp"
                             app:layout_constraintTop_toBottomOf="@id/cv_discount_two"
                             app:layout_constraintStart_toEndOf="@id/iv_badge_two"
-                            android:text="Jakarta Barat"
-                            android:textSize="10sp"/>
+                            android:text="@string/jakarta_barat"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
 
                         <ImageView
                             android:id="@+id/iv_free_deliver_two"
@@ -1178,7 +1243,8 @@
                             android:layout_marginTop="4dp"
                             app:layout_constraintTop_toBottomOf="@id/iv_badge_two"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:src="@drawable/ic_free_deliver"/>
+                            android:src="@drawable/ic_free_deliver"
+                            tools:ignore="ContentDescription" />
 
                         <ProgressBar
                             android:id="@+id/pb_load_two"
@@ -1197,9 +1263,10 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             android:layout_marginTop="4dp"
                             android:layout_marginBottom="4dp"
-                            android:text="Segera Habis"
+                            android:text="@string/segera_habis"
                             android:textSize="8sp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -1227,7 +1294,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/dry_food"/>
+                        android:src="@drawable/dry_food"
+                        tools:ignore="ContentDescription" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -1242,7 +1310,7 @@
                             android:layout_height="wrap_content"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:text="Rp 67.000"
+                            android:text="@string/rp_67_000"
                             android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="@color/Black_80"/>
@@ -1261,9 +1329,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="2dp"
-                                android:text="26%"
+                                android:text="@string/_26"
                                 android:textSize="10sp"
-                                android:textColor="@color/Red_60"/>
+                                android:textColor="@color/Red_60"
+                                tools:ignore="SmallSp" />
                         </androidx.cardview.widget.CardView>
 
                         <TextView
@@ -1273,9 +1342,10 @@
                             app:layout_constraintBottom_toBottomOf="@id/cv_discount_three"
                             app:layout_constraintTop_toTopOf="@id/cv_discount_three"
                             android:padding="2dp"
-                            android:text="38%"
+                            android:text="@string/_38"
                             android:textSize="10sp"
-                            android:textColor="@color/Red_50"/>
+                            android:textColor="@color/Red_50"
+                            tools:ignore="SmallSp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1285,8 +1355,9 @@
                             app:layout_constraintBottom_toBottomOf="@id/cv_discount_three"
                             app:layout_constraintTop_toTopOf="@id/cv_discount_three"
                             android:foreground="@drawable/line_grey"
-                            android:text="Rp 108.000"
-                            android:textSize="8sp"/>
+                            android:text="@string/rp_108_000"
+                            android:textSize="8sp"
+                            tools:ignore="SmallSp,UnusedAttribute" />
 
                         <ImageView
                             android:id="@+id/iv_badge_three"
@@ -1295,7 +1366,8 @@
                             android:layout_marginTop="2dp"
                             app:layout_constraintTop_toBottomOf="@id/cv_discount_three"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:src="@drawable/official_store"/>
+                            android:src="@drawable/official_store"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1303,8 +1375,9 @@
                             android:layout_marginStart="2dp"
                             app:layout_constraintTop_toBottomOf="@id/cv_discount_three"
                             app:layout_constraintStart_toEndOf="@id/iv_badge_three"
-                            android:text="Jakarta Barat"
-                            android:textSize="10sp"/>
+                            android:text="@string/jakarta_barat"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
 
                         <ImageView
                             android:id="@+id/iv_free_deliver_three"
@@ -1313,7 +1386,8 @@
                             android:layout_marginTop="4dp"
                             app:layout_constraintTop_toBottomOf="@id/iv_badge_three"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:src="@drawable/ic_free_deliver"/>
+                            android:src="@drawable/ic_free_deliver"
+                            tools:ignore="ContentDescription" />
 
                         <ProgressBar
                             android:id="@+id/pb_load_three"
@@ -1332,9 +1406,10 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             android:layout_marginTop="4dp"
                             android:layout_marginBottom="4dp"
-                            android:text="Segera Habis"
+                            android:text="@string/segera_habis"
                             android:textSize="8sp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -1363,7 +1438,7 @@
                 android:contentDescription="@string/content_img"
                 android:src="@drawable/ic_home"
                 app:layout_constraintBottom_toTopOf="@id/tv_home"
-                app:layout_constraintEnd_toStartOf="@id/ib_promotion"
+                app:layout_constraintEnd_toStartOf="@id/ib_feed"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
@@ -1376,76 +1451,104 @@
                 app:layout_constraintEnd_toEndOf="@id/ib_home"
                 app:layout_constraintTop_toBottomOf="@id/ib_home"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:text="@string/button_home"/>
+                android:text="@string/btn_home"
+                android:textSize="12sp"/>
 
             <ImageButton
-                android:id="@+id/ib_promotion"
+                android:id="@+id/ib_feed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:contentDescription="@string/content_img"
-                android:src="@drawable/promo"
-                app:layout_constraintBottom_toTopOf="@id/tv_promotion"
-                app:layout_constraintEnd_toStartOf="@id/ib_order"
+                android:src="@drawable/ic_feed"
+                app:layout_constraintBottom_toTopOf="@id/tv_feed"
+                app:layout_constraintEnd_toStartOf="@id/ib_official"
                 app:layout_constraintStart_toEndOf="@id/ib_home"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
-                android:id="@+id/tv_promotion"
+                android:id="@+id/tv_feed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="@id/ib_promotion"
-                app:layout_constraintEnd_toEndOf="@id/ib_promotion"
-                app:layout_constraintTop_toBottomOf="@id/ib_promotion"
+                app:layout_constraintStart_toStartOf="@id/ib_feed"
+                app:layout_constraintEnd_toEndOf="@id/ib_feed"
+                app:layout_constraintTop_toBottomOf="@id/ib_feed"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:text="@string/button_promo"/>
+                android:text="@string/feed"
+                android:textSize="12sp"/>
 
             <ImageButton
-                android:id="@+id/ib_order"
+                android:id="@+id/ib_official"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:contentDescription="@string/content_img"
-                android:src="@drawable/order"
-                app:layout_constraintBottom_toTopOf="@id/tv_order"
-                app:layout_constraintEnd_toEndOf="@id/ib_chat"
-                app:layout_constraintStart_toEndOf="@id/ib_promotion"
+                android:src="@drawable/ic_official"
+                app:layout_constraintBottom_toTopOf="@id/tv_official"
+                app:layout_constraintEnd_toStartOf="@id/ib_whislist"
+                app:layout_constraintStart_toEndOf="@id/ib_feed"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="ImageContrastCheck,TouchTargetSizeCheck" />
 
             <TextView
-                android:id="@+id/tv_order"
+                android:id="@+id/tv_official"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="@id/ib_order"
-                app:layout_constraintEnd_toEndOf="@id/ib_order"
-                app:layout_constraintTop_toBottomOf="@id/ib_order"
+                app:layout_constraintStart_toStartOf="@id/ib_official"
+                app:layout_constraintEnd_toEndOf="@id/ib_official"
+                app:layout_constraintTop_toBottomOf="@id/ib_official"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:text="@string/button_order"/>
+                android:text="@string/official_store"
+                android:textSize="12sp"/>
 
             <ImageButton
-                android:id="@+id/ib_chat"
+                android:id="@+id/ib_whislist"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:contentDescription="@string/content_img"
                 android:src="@drawable/chat"
-                app:layout_constraintBottom_toTopOf="@id/tv_chat"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/ib_order"
+                app:layout_constraintBottom_toTopOf="@id/tv_whislist"
+                app:layout_constraintEnd_toEndOf="@id/ib_transaction"
+                app:layout_constraintStart_toEndOf="@id/ib_official"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
-                android:id="@+id/tv_chat"
+                android:id="@+id/tv_whislist"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="@id/ib_chat"
-                app:layout_constraintEnd_toEndOf="@id/ib_chat"
-                app:layout_constraintTop_toBottomOf="@id/ib_chat"
+                app:layout_constraintStart_toStartOf="@id/ib_whislist"
+                app:layout_constraintEnd_toEndOf="@id/ib_whislist"
+                app:layout_constraintTop_toBottomOf="@id/ib_whislist"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:text="@string/button_chat"/>
+                android:text="@string/whislist"
+                android:textSize="12sp"/>
+
+            <ImageButton
+                android:id="@+id/ib_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:contentDescription="@string/content_img"
+                android:src="@drawable/promo"
+                app:layout_constraintBottom_toTopOf="@id/tv_whislist"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ib_whislist"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/tv_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/ib_transaction"
+                app:layout_constraintEnd_toEndOf="@id/ib_transaction"
+                app:layout_constraintTop_toBottomOf="@id/ib_transaction"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/transaksi"
+                android:textSize="12sp"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.bottomnavigation.BottomNavigationView>
