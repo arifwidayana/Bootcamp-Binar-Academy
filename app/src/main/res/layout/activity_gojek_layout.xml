@@ -660,7 +660,7 @@
                         android:layout_height="128dp"
                         android:contentDescription="@string/content_img"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/header"
+                        android:src="@drawable/banner_2"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
