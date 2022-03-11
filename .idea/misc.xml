@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/All Project Android/Binar/app/src/main/res/drawable/bg_green_oval_corner.xml" value="0.1605" />
+        <entry key="..\:/All Project Android/Binar/app/src/main/res/drawable/ic_arrow_down.xml" value="0.15" />
+        <entry key="..\:/All Project Android/Binar/app/src/main/res/drawable/ic_baseline_add_shopping_cart_24.xml" value="0.1605" />
+        <entry key="..\:/All Project Android/Binar/app/src/main/res/drawable/ic_home_.xml" value="0.1355" />
+        <entry key="..\:/All Project Android/Binar/app/src/main/res/drawable/ic_location.xml" value="0.1605" />
+        <entry key="..\:/All Project Android/Binar/app/src/main/res/drawable/ic_menu.xml" value="0.1605" />
+        <entry key="..\:/All Project Android/Binar/app/src/main/res/drawable/ic_notifications.xml" value="0.1605" />
+        <entry key="..\:/All Project Android/Binar/app/src/main/res/drawable/ic_post.xml" value="0.1605" />
         <entry key="..\:/All Project Android/Binar/app/src/main/res/layout/activity_constraint.xml" value="0.18" />
-        <entry key="..\:/All Project Android/Binar/app/src/main/res/layout/activity_gojek_layout.xml" value="0.2" />
+        <entry key="..\:/All Project Android/Binar/app/src/main/res/layout/activity_gojek_layout.xml" value="0.22" />
         <entry key="..\:/All Project Android/Binar/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/user/StudioProjects/Bootcamp-Binar-Academy/app/src/main/res/drawable/bg_blue_70_corner_10.xml" value="0.3635" />
         <entry key="..\:/Users/user/StudioProjects/Bootcamp-Binar-Academy/app/src/main/res/drawable/bg_blue_corner_10.xml" value="0.3635" />
@@ -18,6 +26,8 @@
         <entry key="..\:/Users/user/StudioProjects/Bootcamp-Binar-Academy/app/src/main/res/drawable/ic_wallet.xml" value="0.3635" />
         <entry key="..\:/Users/user/StudioProjects/Bootcamp-Binar-Academy/app/src/main/res/layout/activity_gojek_layout.xml" value="0.33" />
         <entry key="..\:/Users/user/StudioProjects/Bootcamp-Binar-Academy/app/src/main/res/layout/activity_tokped_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/All Project Android/Binar/app/src/main/res/layout/activity_tokped_layout.xml" value="0.18" />
+        <entry key="..\:/All Project Android/Binar/app/src/main/res/layout/card_balance.xml" value="0.5" />
       </map>
     </option>
   </component>
